@@ -60,7 +60,10 @@
             nextSelector: ".navigation a",
             itemSelector: "#content .post",
             dataType: "html",
-            debug: false
+            debug: false,
+            path: function (index) {
+                return "page" + index + ".html";
+            }
         }, function (newElements, data, url) {
 //            used for prepending data
 //            $(newElements).css('background-color', '#cccccc');
